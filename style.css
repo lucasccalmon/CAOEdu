@@ -52,18 +52,30 @@ header {
 
 .introducao {
   background-color: #fff;
-  margin: 5rem 10rem;
+  margin: 5rem 15rem;
   text-align: center;
+  border-radius: 0.625rem;
+  box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);
 }
 .introducao h1 {
   text-align: center;
   padding-top: 2rem;
   color: #702826;
-
+  position: relative;
   font-size: 2rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+}
+.introducao h1::after {
+  content: "";
+  display: flex;
+  position: absolute;
+  background-color: #f1c513;
+  width: 25rem;
+  height: 0.25rem;
+  left: 54.5vh;
+  bottom: -0.88rem;
 }
 .introducao p {
   text-align: center;
@@ -74,6 +86,29 @@ header {
   font-weight: 500;
   line-height: normal;
 }
+.projetos {
+  background-color: #fff;
+}
+.projetos h1 {
+  color: #702826;
+  text-align: center;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding-top: 1.75rem;
+  position: relative;
+}
+.projetos h1::after {
+  content: "";
+  display: flex;
+  position: absolute;
+  background-color: #f1c513;
+  width: 6.25rem;
+  height: 0.25rem;
+  left: 95.6vh;
+  bottom: -0.88rem;
+}
 
 .projetostudo {
   display: grid;
@@ -82,6 +117,7 @@ header {
   justify-items: end;
   margin-top: 8rem;
   margin-bottom: 8rem;
+  padding-bottom: 12rem;
 }
 .projetostudo img {
   height: 410px;
@@ -89,21 +125,21 @@ header {
 }
 
 .projetostudo p {
-  color: #fff;
+  color: #000;
   text-align: center;
   font-size: 1.5rem;
   font-style: normal;
-  font-weight: 600;
-  line-height: 100%; /* 1.5rem */
-  width: 35rem;
+  font-weight: 500;
+  line-height: normal;
+  width: 25rem;
 }
 .projetostudo h2 {
-  color: #fff;
+  color: #f1c513;
   text-align: center;
-  font-size: 4rem;
+  font-size: 2.25rem;
   font-style: normal;
-  font-weight: 900;
-  line-height: 100%; /* 4rem */
+  font-weight: 700;
+  line-height: normal;
   margin-bottom: 2.5rem;
 }
 .projetos-lista {
@@ -114,14 +150,85 @@ header {
   width: 18px;
 }
 .projetos-lista::-webkit-scrollbar-thumb {
-  background: #8c1827;
-  border-left: 4px solid #00321c;
-  border-right: 4px solid #00321c;
+  background: #f1c513;
+  border-left: 4px solid #fff;
+  border-right: 4px solid #fff;
 }
 .projetos-lista li {
   cursor: pointer;
 }
 .projetos-descricao {
   justify-self: start;
-  margin-left: 3rem;
+  margin-left: 10rem;
+}
+.js .js-tabcontent section {
+  display: none;
+}
+
+.js-tabcontent section.ativo {
+  display: block !important;
+  animation: show 0.5s forwards;
+}
+@keyframes show {
+  from {
+    opacity: 0;
+    transform: translate3d(-30px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.objetivos {
+  background-color: #fff;
+  margin: 5rem 15rem;
+  text-align: center;
+  border-radius: 0.625rem;
+  box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);
+}
+.objetivos h1 {
+  color: #702826;
+  text-align: center;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding-top: 1.75rem;
+}
+.objetivos p {
+  color: #000;
+  text-align: center;
+  padding: 5rem 9.2rem;
+  margin-right: 9rem;
+  margin-left: 9rem;
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  position: relative;
+}
+.objetivos p::before {
+  content: "";
+  display: flex;
+  position: absolute;
+  background-color: #f1c513;
+  width: 10rem;
+  height: 0.25rem;
+  left: 52vh;
+  top: 0rem;
+}
+
+footer {
+  background: #702826;
+  padding: 2rem;
+}
+footer p {
+  text-align: center;
+  color: #fff;
+  font-family: "Roboto Slab", "Roboto";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
