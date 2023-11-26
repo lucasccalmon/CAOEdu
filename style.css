@@ -49,3 +49,79 @@ header {
   border-radius: 0.9375rem;
   display: block;
 }
+
+.introducao {
+  background-color: #fff;
+  margin: 5rem 10rem;
+  text-align: center;
+}
+.introducao h1 {
+  text-align: center;
+  padding-top: 2rem;
+  color: #702826;
+
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.introducao p {
+  text-align: center;
+  padding: 6rem 5rem 7rem;
+  color: #000;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.projetostudo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: end;
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+}
+.projetostudo img {
+  height: 410px;
+  width: 680px;
+}
+
+.projetostudo p {
+  color: #fff;
+  text-align: center;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%; /* 1.5rem */
+  width: 35rem;
+}
+.projetostudo h2 {
+  color: #fff;
+  text-align: center;
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 100%; /* 4rem */
+  margin-bottom: 2.5rem;
+}
+.projetos-lista {
+  height: 410px;
+  overflow-y: scroll;
+}
+.projetos-lista::-webkit-scrollbar {
+  width: 18px;
+}
+.projetos-lista::-webkit-scrollbar-thumb {
+  background: #8c1827;
+  border-left: 4px solid #00321c;
+  border-right: 4px solid #00321c;
+}
+.projetos-lista li {
+  cursor: pointer;
+}
+.projetos-descricao {
+  justify-self: start;
+  margin-left: 3rem;
+}
